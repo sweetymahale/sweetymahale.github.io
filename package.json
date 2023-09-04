@@ -42,6 +42,7 @@
     "@scope:registry": "https://gitlabinstance/api/v4/projects/986/packages/npm/"
   },
   "devDependencies": {
-    "gh-pages": "^6.0.0"
+    "gh-pages": "^6.0.0",
+    "react-router-dom": "^6.15.0"
   }
 }
