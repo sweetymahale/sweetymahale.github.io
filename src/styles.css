@@ -1,5 +1,8 @@
 .container {
   font-family: "Lobster","Josefin Sans",Helvetica,Arial,sans-serif;
+  background-color: #fff;
+  color: black;
+  margin-bottom: 50px;
 }
 .home-intro {
   font-family: "Lobster","Josefin Sans",Helvetica,Arial,sans-serif;
@@ -8,6 +11,19 @@
   line-height: 1.5;
   padding: 1rem;
   margin-bottom: 40px;
+  justify-content: left;
+}
+
+.home-header{
+  font-family: "Lobster","Josefin Sans",Helvetica,Arial,sans-serif;
+  font-size: 2rem;
+  font-weight:700;
+  font-weight: 400;
+  line-height: 1.5;
+  align-items: left;
+  display: flex;
+  margin-top: 50px;;
+  justify-content: left;
 }
 .about-container{
   font-family: "Lobster","Josefin Sans",Helvetica,Arial,sans-serif;
@@ -41,11 +57,21 @@
   padding: 1em;
   margin-bottom: 1em;
   }
+.example-header {
+  font-family: "Lobster","Josefin Sans",Helvetica,Arial,sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 1rem;
+  margin-bottom: 15px;
+  justify-content: center;
+}
 
 .traffic-light-container {
   background-color: #000;
   border-radius: 8px;
   display: flex;
+  align-items: left;
   padding: 8px;
   gap: 8px;
 }
@@ -103,6 +129,7 @@
 }
 .navigation-menu li a {
   text-decoration: none;
+  color: black;
   display: block;
   width: 100%;
 }
