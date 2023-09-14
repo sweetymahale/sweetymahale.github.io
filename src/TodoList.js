@@ -16,7 +16,7 @@ const TodoList = () => {
 
   return (
     <div>
-      <div>
+      <div className="to-do-list-input">
         <input
           aria-label="Add new task"
           type="text"
@@ -26,8 +26,8 @@ const TodoList = () => {
             setNewTask(event.target.value);
           }}
         />
-        <div>
           <button
+            className="to-do-list-button"
             onClick={() => {
               setTasks(
                 tasks.concat({
@@ -40,12 +40,12 @@ const TodoList = () => {
             Submit
           </button>
         </div>
-      </div>
       <ul>
         {tasks.map(({ id, label }) => (
           <li key={id}>
             <span>{label}</span>
             <button
+              className="to-do-list-button"
               onClick={() => {
                 setTasks(
                   tasks.filter((task) => task.id !== id),

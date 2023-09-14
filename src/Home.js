@@ -43,11 +43,13 @@ export default function Home() {
           <Col  xs={{ span: 12 }} sm={{ span: 12 }} md={{ span: 12 }}lg={{ span: 12 }} xl={{ span: 12 }}> <div className="wrapper example-header">Drag and Drop<DragnDrop /></div></Col>
         </Row>
         <Row gutter={40} justify="left" align="bottom">
-          <Col xs={{ span: 12 }} sm={{ span: 12 }} md={{ span: 6 }} lg={{ span: 6 }} xl={{ span: 6 }}> <div className="wrapper example-header" >Traffic Signal<TrafficLight config={config} /></div></Col>
-          <Col  xs={{ span: 12 }} sm={{ span: 12 }} md={{ span: 6 }}lg={{ span: 6 }} xl={{ span: 6 }}> <div className="wrapper example-header">ToDo List<TodoList/></div></Col>
+          <Col  xs={{ span: 12 }} sm={{ span: 12 }} md={{ span: 12 }}lg={{ span: 12 }} xl={{ span: 12 }}> <div className="wrapper example-header">Traffic Signal<TrafficLight config={config} /></div></Col>
         </Row>
         <Row gutter={40} justify="left" align="bottom">
-          <Col  xs={{ span: 12 }} sm={{ span: 12 }} md={{ span: 6 }}lg={{ span: 6 }} xl={{ span: 6 }}> <div className="wrapper example-header">Contact Form<ContactForm /></div></Col>
+          <Col  xs={{ span: 12 }} sm={{ span: 12 }} md={{ span: 12 }}lg={{ span: 12 }} xl={{ span: 12 }}> <div className="wrapper example-header">ToDo List<TodoList/></div></Col>
+        </Row>
+        <Row gutter={40} justify="left" align="bottom">
+          <Col  xs={{ span: 12 }} sm={{ span: 12 }} md={{ span: 12 }}lg={{ span: 12 }} xl={{ span: 12 }}> <div className="wrapper example-header">Contact Form<ContactForm /></div></Col>
         </Row>
     </div>    
   )

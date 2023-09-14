@@ -87,7 +87,14 @@
   height: var(--size);
   width: var(--size);
 }
-
+.to-do-list-input{
+  margin-bottom: 20px;
+  
+}
+.to-do-list-button{
+  margin-left: 10px;
+  
+}
 .footer {
   position: fixed;
   background-color: gray;
