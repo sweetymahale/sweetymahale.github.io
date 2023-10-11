@@ -28,29 +28,29 @@ const config = {
 export default function Home() {
   return (
     <div className="container">
-        <span className="home-intro">
+      <span className="home-intro">
         <span className="home-header">Welcome! </span>
-            <p>I am Sweety Mahale, I have overall 8+ years of professional experience in Software Development focusing on the Web technologies.
-            </p>
-            <p>    
-                I am interested in working on the latest technologies, using my skills and knowledge imporove the performance of application.
-            </p>
-            <p>
-                More content coming soon...
-            </p>
-        </span>
-        <Row gutter={40} justify="left" align="bottom">
-          <Col  xs={{ span: 12 }} sm={{ span: 12 }} md={{ span: 12 }}lg={{ span: 12 }} xl={{ span: 12 }}> <div className="wrapper example-header">Drag and Drop<DragnDrop /></div></Col>
-        </Row>
-        <Row gutter={40} justify="left" align="bottom">
-          <Col  xs={{ span: 12 }} sm={{ span: 12 }} md={{ span: 12 }}lg={{ span: 12 }} xl={{ span: 12 }}> <div className="wrapper example-header">Traffic Signal<TrafficLight config={config} /></div></Col>
-        </Row>
-        <Row gutter={40} justify="left" align="bottom">
-          <Col  xs={{ span: 12 }} sm={{ span: 12 }} md={{ span: 12 }}lg={{ span: 12 }} xl={{ span: 12 }}> <div className="wrapper example-header">ToDo List<TodoList/></div></Col>
-        </Row>
-        <Row gutter={40} justify="left" align="bottom">
-          <Col  xs={{ span: 12 }} sm={{ span: 12 }} md={{ span: 12 }}lg={{ span: 12 }} xl={{ span: 12 }}> <div className="wrapper example-header">Contact Form<ContactForm /></div></Col>
-        </Row>
-    </div>    
+        <p>I am Sweety Mahale, I have overall 8+ years of professional experience in Software Development focusing on the Web technologies.
+        </p>
+        <p>
+          I am interested in working on the latest technologies, using my skills and knowledge imporove the performance of application.
+        </p>
+        <p>
+          More content coming soon...
+        </p>
+      </span>
+      <Row gutter={40} justify="left" align="bottom">
+        <Col xs={{ span: 12 }} sm={{ span: 12 }} md={{ span: 12 }} lg={{ span: 12 }} xl={{ span: 12 }}> <div className="wrapper example-header">Drag and Drop<DragnDrop /></div></Col>
+      </Row>
+      <Row gutter={40} justify="left" align="bottom">
+        <Col xs={{ span: 12 }} sm={{ span: 12 }} md={{ span: 12 }} lg={{ span: 12 }} xl={{ span: 12 }}> <div className="wrapper example-header">Traffic Signal<TrafficLight config={config} /></div></Col>
+      </Row>
+      <Row gutter={40} justify="left" align="bottom">
+        <Col xs={{ span: 12 }} sm={{ span: 12 }} md={{ span: 12 }} lg={{ span: 12 }} xl={{ span: 12 }}> <div className="wrapper example-header">ToDo List<TodoList /></div></Col>
+      </Row>
+      <Row gutter={40} justify="left" align="bottom">
+        <Col xs={{ span: 12 }} sm={{ span: 12 }} md={{ span: 12 }} lg={{ span: 12 }} xl={{ span: 12 }}> <div className="wrapper example-header">Contact Form<ContactForm /></div></Col>
+      </Row>
+    </div>
   )
 }
