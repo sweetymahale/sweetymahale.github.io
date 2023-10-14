@@ -8,17 +8,14 @@
 
 .header {
     flex: 2;
-    background-color: rgb(50, 50, 50);
 
 }
 
 .tv_show_detail {
     flex: 4;
-    background-color: rgb(0, 0, 255);
 
 }
 
 .recommended_tv_show {
     flex: 2;
-    background-color: rgb(0, 255, 0);
 }

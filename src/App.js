@@ -4,7 +4,7 @@ import Home from './Home';
 import About from './About';
 import Contact from './Contact';
 import Navbar from './NavBar';
-import MovieList from './MovieList';
+import MovieList from './MovieList/MovieList';
 import './App.css';
 
 function App() {
