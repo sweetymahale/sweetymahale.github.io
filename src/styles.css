@@ -1,11 +1,12 @@
 .container {
-  font-family: "Lobster","Josefin Sans",Helvetica,Arial,sans-serif;
+  font-family: "Lobster", "Josefin Sans", Helvetica, Arial, sans-serif;
   background-color: #fff;
   color: black;
   margin-bottom: 50px;
 }
+
 .home-intro {
-  font-family: "Lobster","Josefin Sans",Helvetica,Arial,sans-serif;
+  font-family: "Lobster", "Josefin Sans", Helvetica, Arial, sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -14,40 +15,45 @@
   justify-content: left;
 }
 
-.home-header{
-  font-family: "Lobster","Josefin Sans",Helvetica,Arial,sans-serif;
+.home-header {
+  font-family: "Lobster", "Josefin Sans", Helvetica, Arial, sans-serif;
   font-size: 2rem;
-  font-weight:700;
+  font-weight: 700;
   font-weight: 400;
   line-height: 1.5;
   align-items: left;
   display: flex;
-  margin-top: 50px;;
+  margin-top: 50px;
+  ;
   justify-content: left;
 }
-.about-container{
-  font-family: "Lobster","Josefin Sans",Helvetica,Arial,sans-serif;
+
+.about-container {
+  font-family: "Lobster", "Josefin Sans", Helvetica, Arial, sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   align-items: left;
   display: flex;
-  margin-top: 50px;;
+  margin-top: 50px;
+  ;
   justify-content: left;
 }
-.contact-container{
-    font-family: 'Lato';
-    height: 650px;
-    padding-top: 100px;
-    text-align: center;
-    font-size: 1rem;
+
+.contact-container {
+  font-family: 'Lato';
+  height: 650px;
+  padding-top: 100px;
+  text-align: center;
+  font-size: 1rem;
 }
-.page-heading{
+
+.page-heading {
   font-size: 2rem;
   display: block;
   margin-bottom: 20px;
 }
- 
+
 .wrapper {
   align-items: center;
   display: flex;
@@ -56,9 +62,10 @@
   justify-content: left;
   padding: 1em;
   margin-bottom: 1em;
-  }
+}
+
 .example-header {
-  font-family: "Lobster","Josefin Sans",Helvetica,Arial,sans-serif;
+  font-family: "Lobster", "Josefin Sans", Helvetica, Arial, sans-serif;
   font-size: 1.1rem;
   font-weight: 800;
   line-height: 1.5;
@@ -87,14 +94,17 @@
   height: var(--size);
   width: var(--size);
 }
-.to-do-list-input{
+
+.to-do-list-input {
   margin-bottom: 20px;
-  
+
 }
-.to-do-list-button{
+
+.to-do-list-button {
   margin-left: 10px;
-  
+
 }
+
 .footer {
   position: fixed;
   background-color: gray;
@@ -105,6 +115,7 @@
   text-align: center;
   height: 80px;
 }
+
 .navigation {
   height: 60px;
   width: 100%;
@@ -116,30 +127,36 @@
   color: black;
   box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
 }
+
 .brand-name {
-  font-family: "Lobster","Josefin Sans",Helvetica,Arial,sans-serif;
+  font-family: "Lobster", "Josefin Sans", Helvetica, Arial, sans-serif;
   font-size: 4em;
   text-decoration: none;
   color: black;
   margin-left: 1rem;
 }
+
 .navigation-menu {
   margin-left: auto;
 }
+
 .navigation-menu ul {
   display: flex;
   padding: 0;
 }
+
 .navigation-menu li {
   list-style-type: none;
   margin: 0 1rem;
 }
+
 .navigation-menu li a {
   text-decoration: none;
   color: black;
   display: block;
   width: 100%;
 }
+
 .hamburger {
   border: 0;
   height: 40px;
@@ -155,19 +172,23 @@
   transform: translateY(-50%);
   display: none;
 }
+
 .hamburger:hover {
   background-color: #2642af;
 }
+
 @media screen and (max-width: 768px) {
   .hamburger {
     display: block;
   }
 }
+
 @media screen and (max-width: 768px) {
   .navigation-menu ul {
     display: none;
   }
 }
+
 @media screen and (max-width: 768px) {
   .navigation-menu ul {
     position: absolute;
@@ -179,29 +200,35 @@
     background-color: white;
     border-top: 1px solid black;
   }
+
   .navigation-menu li {
     text-align: center;
     margin: 0;
   }
+
   .navigation-menu li a {
     color: black;
     width: 100%;
     padding: 1.5rem 0;
   }
+
   .navigation-menu li:hover {
     background-color: #eee;
   }
 }
+
 @media screen and (max-width: 768px) {
   .navigation-menu ul {
     display: none;
   }
 }
+
 @media screen and (max-width: 768px) {
   .navigation-menu.expanded ul {
     display: block;
   }
 }
+
 .card {
   transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
 }
@@ -249,6 +276,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -256,50 +284,51 @@
 
 /*  */
 
-.input-todo-text{
+.input-todo-text {
   font-family: 'Poppins', sans-serif;
-  color:white;
+  color: white;
   background-color: #282c34;
   padding: 20px 30px;
-  border:1px solid rgb(228, 252, 193);
+  border: 1px solid rgb(228, 252, 193);
   font-size: 1rem;
   margin-right: 15px;
 }
-.add-todo-button{
+
+.add-todo-button {
   font-family: 'Poppins', sans-serif;
-  color:white;
+  color: white;
   background-color: #282c34;
   padding: 20px 30px;
-  border:1px solid rgb(228, 252, 193);
+  border: 1px solid rgb(228, 252, 193);
   font-size: 1rem;
 }
 
-.add-todo-button:hover{
+.add-todo-button:hover {
   background-color: rgb(224, 247, 190);
-  color:black;
+  color: black;
   cursor: pointer;
 }
 
-.todo-item-text{
+.todo-item-text {
   padding: 20px;
   background: rgb(186, 231, 232);
   border-radius: 15px;
   transition: 0.4s all;
-  margin-top:20px;
+  margin-top: 20px;
   margin-bottom: 20px;
   font-size: 1rem;
 }
 
-.todo-item-text:hover{
+.todo-item-text:hover {
   transition: 0.4s all;
   cursor: pointer;
   transform: scale(1.1);
 }
 
-div.drag-indicator{
+div.drag-indicator {
   width: 100%;
   height: 5px;
-  background-color: red;
+  background-color: rgb(85, 159, 193);
   margin-top: 3px;
   margin-bottom: 3px;
 }
