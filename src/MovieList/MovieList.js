@@ -5,11 +5,23 @@ import { BASE_URL } from "./config";
 import { BACKDROP_BASE_URL } from "./config";
 import { TVShowDetail } from "./TVShowDetail/TVShowDetails";
 import { Logo } from "./Logo/Logo";
+import { TVShowList } from './TVShowList/TVShowList'
 import logoImg from "./img/logo.png";
 
 export function MovieList() {
     const [currentTvShow, setCurrentTVShow] = useState();
     const [recommendationList, setRecommendationList] = useState([]);
+
+    useEffect(() => {
+        fetchPopulars();
+
+    }, []);
+    useEffect(() => {
+        if (currentTvShow) {
+            fetchRecommendations(currentTvShow.id);
+        }
+    }, [currentTvShow]);
+
     async function fetchPopulars() {
         const popularTVShowList = await TVShowAPI.fetchPopulars();
         if (popularTVShowList.length > 0)
@@ -17,17 +29,6 @@ export function MovieList() {
 
             ]);
     }
-    useEffect(() => {
-        fetchPopulars();
-
-    }, []);
-    useEffect(() => {
-        if (currentTVShow) {
-            fetchRecommendations(currentTVShow.id);
-        }
-    }, [currentTvShow]);
-
-
     async function fetchRecommendations(tvShowId) {
         const recommendationListResp = await TVShowAPI.fetchRecommendations(
             tvShowId
@@ -46,7 +47,6 @@ export function MovieList() {
             setCurrentTVShow(searchResponse[0]);
         }
     }
-    console.log(currentTvShow);
     return (
         <div className={s.main_container}
             style={{
