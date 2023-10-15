@@ -1,6 +1,5 @@
-import { StartFill, StartHalf, Star as StartEmpty, StarHalf } from "react-bootstrap-icons";
-
-export function FiveStartRating({ rating }) {
+import { StarFill, StarHalf, Star as StarEmpty } from "react-bootstrap-icons";
+export function FiveStarRating({ rating }) {
     const starList = [];
 
     //store number of filled star

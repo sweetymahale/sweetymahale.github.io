@@ -3,6 +3,9 @@ import s from "./style.module.css";
 import { TVShowAPI } from './tv-show';
 import { BASE_URL } from "../config";
 import { BACKDROP_BASE_URL } from "../config";
+import { TVShowDetail } from "./TVShowDetail/TVShowDetails";
+import { Logo } from "./Logo/Logo";
+import logoImg from "./img/logo.png";
 
 export function MovieList() {
     const [currentTvShow, setCurrentTVShow] = useState();
@@ -28,15 +31,16 @@ export function MovieList() {
             <div className={s.header}>
                 <div className="row">
                     <div className="col-4">
-                        <div>LOGO</div>
-                        <div>Subtitle</div>
+                        <Logo image={logoImg} title='WaytoWatch' subtitle="Find your favourite" />
                     </div>
                     <div className="col-sm-12 col-lg-4">
                         <input style={{ width: "100%" }} type="text" />
                     </div>
                 </div>
             </div>
-            <div className={s.tv_show_detail}>TV Show Detail</div>
+            <div className={s.tv_show_detail}>
+                {currentTvShow && <TVShowDetail tvShow={currentTvShow} />}
+            </div>
             <div className={s.recommended_tv_show}>Recommended Tv SHow</div>
         </div>
     )
