@@ -6,6 +6,7 @@ import './styles.css';
 import TodoList from './TodoList';
 import ContactForm from './ContactForm';
 import DragnDrop from "./DragnDrop";
+import Windowing from './Windowing/Windowing'
 
 const config = {
   red: {
@@ -50,6 +51,9 @@ export default function Home() {
       </Row>
       <Row gutter={40} justify="left" align="bottom">
         <Col xs={{ span: 12 }} sm={{ span: 12 }} md={{ span: 12 }} lg={{ span: 12 }} xl={{ span: 12 }}> <div className="wrapper example-header">Contact Form<ContactForm /></div></Col>
+      </Row>
+      <Row gutter={40} justify="left" align="bottom">
+        <Col xs={{ span: 12 }} sm={{ span: 12 }} md={{ span: 12 }} lg={{ span: 12 }} xl={{ span: 12 }}> <div className="wrapper example-header"><Windowing /></div></Col>
       </Row>
     </div>
   )
