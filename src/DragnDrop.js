@@ -1,43 +1,43 @@
-import React, {useState, useRef} from "react"
+import React, { useState, useRef } from "react"
 
-export default function DragnDrop(){
+export default function DragnDrop() {
     const [todoInputText, setTodoInputText] = useState("")
     const [todos, setTodos] = useState([
         {
             todo: "Making a video! (you can drag me and drop above or below)",
             complete: true,
-            isDragging: false  
+            isDragging: false
         },
         {
             todo: "Making a website! (you can drag me and drop above or below)",
             complete: false,
-            isDragging: false  
+            isDragging: false
         },
         {
             todo: "Making another website! (you can drag me and drop above or below)",
             complete: false,
-            isDragging: false  
+            isDragging: false
         }
     ])
 
-    function handleAddTodo(){
-        if(todoInputText.length > 0){
-            setTodos([...todos, { todo:todoInputText, complete: false,isDragging: false    }])
+    function handleAddTodo() {
+        if (todoInputText.length > 0) {
+            setTodos([...todos, { todo: todoInputText, complete: false, isDragging: false }])
         }
     }
 
-    function handleTodoClicks (e, index){
-        switch(e.detail){
+    function handleTodoClicks(e, index) {
+        switch (e.detail) {
             case 1:
                 // complete - > true
                 const newArr = []
-                todos.forEach((item, i)=>{
-                    if(i === index){
+                todos.forEach((item, i) => {
+                    if (i === index) {
                         newArr.push({
                             todo: item.todo,
                             complete: !item.complete
                         })
-                    }else{
+                    } else {
                         newArr.push(item)
                     }
                 })
@@ -45,7 +45,7 @@ export default function DragnDrop(){
                 setTodos(newArr)
                 break;
             case 2:
-                setTodos( todos.filter((item,iy)=> iy !== index) )
+                setTodos(todos.filter((item, iy) => iy !== index))
                 break;
 
             default:
@@ -54,19 +54,19 @@ export default function DragnDrop(){
     }
 
     let todoItemDrag = useRef()
-    let todoItemDragOver = useRef()    
+    let todoItemDragOver = useRef()
 
-    function D_Start(e,index){
+    function D_Start(e, index) {
         todoItemDrag.current = index;
     }
-    function D_Enter(e,index){
+    function D_Enter(e, index) {
         todoItemDragOver.current = index
 
         const cpArr = [...todos]
 
         let finalArr = []
 
-        cpArr.forEach(item=>{
+        cpArr.forEach(item => {
             finalArr.push({
                 todo: item.todo,
                 complete: item.complete,
@@ -80,7 +80,7 @@ export default function DragnDrop(){
 
 
     }
-    function D_End(e,index){
+    function D_End(e, index) {
         const arr1 = [...todos]
 
         const todo_item_main = arr1[todoItemDrag.current]
@@ -92,7 +92,7 @@ export default function DragnDrop(){
 
         let f_arr = []
 
-        arr1.forEach(item=>{
+        arr1.forEach(item => {
             f_arr.push({
                 todo: item.todo,
                 complete: item.complete,
@@ -103,20 +103,20 @@ export default function DragnDrop(){
         setTodos(f_arr)
     }
 
-    return(
+    return (
         <div className="todo-container">
-            <p>A Draggable tasklist built with raw js and react without using any libraries</p>
-            <input onChange={e=> setTodoInputText(e.target.value)} className="input-todo-text" type="text" placeholder="enter a task" />
-            <button onClick={()=> handleAddTodo()} className="add-todo-button">add task</button>
+            <p>A Draggable tasklist built with raw js and React.js without using any libraries</p>
+            <input onChange={e => setTodoInputText(e.target.value)} className="input-todo-text" type="text" placeholder="enter a task" />
+            <button onClick={() => handleAddTodo()} className="add-todo-button">add task</button>
             <div className="display-todo-container">
-                {todos.map((todo, index)=>(
+                {todos.map((todo, index) => (
                     <React.Fragment>
 
-                    <h3 draggable droppable onDragStart={e=> D_Start(e,index)} onDragEnter={e=> D_Enter(e,index)} onDragEnd={e=> D_End(e,index)} style={{textDecoration: todo.complete ? "line-through" : "none", background: todo.complete ? "red" : null}} onClick={e=> handleTodoClicks(e, index)} className="todo-item-text">{todo.todo}</h3>
-                    {todo.isDragging ?  <div className="drag-indicator"></div> : null}
-                   
+                        <h3 draggable droppable onDragStart={e => D_Start(e, index)} onDragEnter={e => D_Enter(e, index)} onDragEnd={e => D_End(e, index)} style={{ textDecoration: todo.complete ? "line-through" : "none", background: todo.complete ? "skyblue" : null }} onClick={e => handleTodoClicks(e, index)} className="todo-item-text">{todo.todo}</h3>
+                        {todo.isDragging ? <div className="drag-indicator"></div> : null}
+
                     </React.Fragment>
-                    
+
                 ))}
             </div>
         </div>
