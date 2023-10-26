@@ -31,6 +31,7 @@ export default function Windowing() {
     return (
         <>
             <h1 style={{ textAlign: "center" }}>Windowing Example</h1>
+            <span>Implemented 'react-window' liabrary for rendering large list, it helps in improving page performance as we dont have to load thousands of records in UI </span>
             <div className={s.main_container}>{renderList()}</div>
             <div style={{ display: "flex", justifyContent: "center" }}
 
