@@ -34,6 +34,9 @@ export default function Home() {
         <p>I am Sweety Mahale, I have overall 8+ years of professional experience in Software Development focusing on the Web technologies.
         </p>
         <p>
+          My skills set are Java, Spring boot, React.js, Javascript, PHP, HTML5, CSS3, SASS, LESS, Bootstrap, Jenkins, Docker, MySQL, Oracle, Postgres, AWS,
+        </p>
+        <p>
           I am interested in working on the latest technologies, using my skills and knowledge imporove the performance of application.
         </p>
         <p>
