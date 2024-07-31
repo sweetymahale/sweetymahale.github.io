@@ -1,3 +1,10 @@
+# Currently working on it
+# Next things to do
+1. Update version
+2. Include new features that I learned
+3. Update My  Information
+4. Update Styling
+5. Work on making the page fast, and work towards page load time. (Use React memo, Use CDN...)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
